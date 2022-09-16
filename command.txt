@@ -1,0 +1,9 @@
+mkdir palaysi
+setfacl -m d:u:etupalaysi:rx palaysi
+getfacl palaysi
+setfacl -m u:etupalaysi:x
+pwd
+
+scp -P 6666 script-somme-0.php hirchytsd@162.38.222.93:~/palaysi/
+ssh hirchytsd@162.38.222.93 -p 6666
+
