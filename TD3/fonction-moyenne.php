@@ -1,9 +1,6 @@
 <?php
-    function moyenne(array $tab): int
+    function moyenne(array $tab): float
     {
-        $somme = 0;
-        for ($i = 0; $i < count($tab); $i++) {
-            $somme += $tab[$i];
-        }
+        for ($i = 0, $somme = 0; $i < count($tab); $i++) $somme += $tab[$i];
         return $somme / count($tab);
     }
