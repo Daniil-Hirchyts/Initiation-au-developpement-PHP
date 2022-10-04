@@ -1,4 +1,5 @@
 <?php
     function max2(int $a, int $b): int{
-        return max($a, $b);
+        if ($a > $b) return $a;
+        else return $b;
     }

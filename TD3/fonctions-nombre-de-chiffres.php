@@ -4,7 +4,7 @@
         $nb = 0;
         while ($n > 0) {
             $n = floor($n / 10);
-            $nb++;
+            ++$nb;
         }
         return $nb;
     }

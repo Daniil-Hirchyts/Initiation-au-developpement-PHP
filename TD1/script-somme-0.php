@@ -6,6 +6,6 @@ while ($n != 0) {
     $s += $n;
     ++$i;
     $n = readline();
-}
+    }
 echo ($i);
 echo ($s);

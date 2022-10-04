@@ -4,7 +4,8 @@
     require ("procédure-afficherTabEntiers.php");
 
     //a
-    $a = saisirTabEntiers(100);
+    $nb = readline("Entrez un nombre entier : ");
+    $a = saisirTabEntiers($nb);
 
     //b
     $b = afficherTabEntiers($a);
@@ -14,7 +15,7 @@
     echo $c = moyenne($a) . "\n";
 
     //d
-    for ($i = 1; $i <= count($a); ++$i) if ($i % 2 == 0) ++$a[$i - 1];
+    for ($i = 0; $i < count($a); ++$i) if ($a[$i] % 2 == 0) ++$a[$i];
     //e
     $e = afficherTabEntiers($a);
     echo "\n";

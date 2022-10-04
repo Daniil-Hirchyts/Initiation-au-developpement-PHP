@@ -1,5 +1,8 @@
 <?php
     function afficherTabEntiers(array $tab): void
     {
-        for ($i = 0; $i < count($tab); $i++) echo $tab[$i] . " ";
+        echo "[";
+        for ($i = 0; $i < count($tab); $i++)
+            if ($i == count($tab) - 1) echo $tab[$i]."]";
+            else echo $tab[$i] . ", ";
     }
