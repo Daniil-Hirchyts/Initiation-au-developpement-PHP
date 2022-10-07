@@ -13,3 +13,4 @@
     {
         return nbDeChiffresDe($n * $n);
     }
+    

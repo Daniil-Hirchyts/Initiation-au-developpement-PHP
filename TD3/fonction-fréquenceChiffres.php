@@ -9,3 +9,4 @@ function fréquenceChiffres(int $n): array
     }
     return $tab;
 }
+
