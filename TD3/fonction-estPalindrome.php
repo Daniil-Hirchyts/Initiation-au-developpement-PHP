@@ -1,8 +1,8 @@
 <?php
-function estPalindrome(array $tab):bool
+function estPalindrome(string $tab):bool
 {
     $i = 0;
-    $j = count($tab) - 1;
+    $j = strlen($tab) - 1;
     while ($i < $j){
         if ($tab[$i] != $tab[$j]){
             return false;
