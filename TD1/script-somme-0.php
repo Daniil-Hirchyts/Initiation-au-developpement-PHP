@@ -3,9 +3,10 @@ $s = 0;
 $i = 0;
 $n = readline();
 while ($n != 0) {
-    $s += $n;
     ++$i;
+    $s += $n;
     $n = readline();
-    }
+}
 echo ($i);
+echo (" ");
 echo ($s);
