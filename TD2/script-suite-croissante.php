@@ -5,11 +5,12 @@ $nbr = readline("Entrez un nombre entier : ");
 $n = readline("Entrez un nombre entier $i : ");
 $p = $n;
 $v = true;
-for (++$i; $i < $nbr; ++$i) {
+while ($i < $nbr) {
     $n = readline("Entrez un nombre entier $i : ");
     if ($n > $p) {
         $p = $n;
     } else $v = false;
+    ++$i;
 }
 if ($v) echo "vrai";
 else echo "faux";
