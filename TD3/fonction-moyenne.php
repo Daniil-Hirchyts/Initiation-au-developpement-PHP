@@ -3,7 +3,7 @@
 // fichier fonction-moyenne.php
 
 /**
- * Donnée : un tableau de réels
+ * Donnée : un tableau de réels non vide
  * Résultat : retourne la moyenne des éléments du tableau
  */
 function moyenne(array $tab): float

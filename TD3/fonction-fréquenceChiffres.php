@@ -9,9 +9,13 @@
 function fréquenceChiffres(int $n): array
 {
     $tab = array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if ($n == 0) {
+        $tab[$n % 10]++;
+        $n = intdiv($n, 10);
+    }
     while ($n > 0) {
         $tab[$n % 10]++;
-        $n = (int)($n / 10);
+        $n = intdiv($n, 10);
     }
     return $tab;
 }
