@@ -6,7 +6,7 @@
  * Donnée : un entier
  * Résultat : retourne le nombre de triangles rectangles dont le périmètre est au plus n
  */
-function nombreDeTriangleRectangleDePérimètreAuPlus(int $n): int
+function nombreDeTrianglesRectanglesDePérimètreAuPlus(int $n): int
 {
     $nb = 0;
     for ($i = 1; $i <= $n; $i++) {
