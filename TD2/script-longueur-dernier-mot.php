@@ -1,10 +1,10 @@
 <?php
-$n = 0;
-$c = "";
-while ($c != ".") {
+
+$c = '';
+$l = 0;
+do {
+    if ($c != ' ') $l++;
+    else $l = 0;
     $c = fgetc(STDIN);
-    if ($c != ' ') ++$n;
-    else $n = 0;
-    if ($c == '.') $n--;
-}
-echo "***$n***";
+} while ($c != '.');
+echo("***$l***\n");

@@ -3,7 +3,7 @@
 // fichier procedure-repeteCarac.php
 
 /**
- * Donnée : un entier et un caractère
+ * Donnée : un entier positif et un caractère
  * Résultat : affichage de n fois le caractère
  */
 function repeteCarac(int $nb, string $car): void

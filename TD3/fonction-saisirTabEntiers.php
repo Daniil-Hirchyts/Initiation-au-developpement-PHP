@@ -3,7 +3,7 @@
 // fichier fonction-saisirTabEntiers.php
 
 /**
- * Donnée : un entier n
+ * Donnée : un entier n positif non nul
  * Résultat : retourne un tableau de n entiers saisis au clavier
  */
 function saisirTabEntiers(int $t): array
@@ -14,3 +14,4 @@ function saisirTabEntiers(int $t): array
     }
     return $tab;
 }
+
