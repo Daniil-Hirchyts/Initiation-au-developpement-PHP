@@ -1,15 +1,16 @@
 <?php
-$i = 1;
-$nbr = readline("Entrez un nombre entier : ");
-$n = readline("Entrez un nombre entier $i : ");
+$nb = readline();
+$n = readline();
 $p = $n;
-$v = true;
-while ($i < $nbr) {
-    ++$i;
-    $n = readline("Entrez un nombre entier $i : ");
-    if ($n > $p) {
-        $p = $n;
-    } else $v = false;
+$finSuite = false;
+$suite = true;
+$i = 1;
+while (!$finSuite && $suite) {
+    $n = readline();
+    if ($n > $p) $p = $n;
+    else $suite = false;
+    $i++;
+    if ($i >= $nb) $finSuite = true;
 }
-if ($v) echo "vrai";
+if ($suite) echo("vrai");
 else echo "faux";
